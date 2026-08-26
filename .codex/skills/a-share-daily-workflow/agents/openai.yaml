@@ -1,0 +1,4 @@
+interface:
+  display_name: "A股每日流程"
+  short_description: "当前 A 股仓库专用的每日筛选、复盘与自选同步流程"
+  default_prompt: "Use $a-share-daily-workflow to run today's workflow for this A-share project."

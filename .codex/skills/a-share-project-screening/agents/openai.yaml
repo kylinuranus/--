@@ -1,0 +1,4 @@
+interface:
+  display_name: "A股项目中文选股"
+  short_description: "当前仓库专用的中文选股、复盘、解释与自选同步工作流。"
+  default_prompt: "Use $a-share-project-screening 用中文执行当前项目的固定选股、复盘、解释或自选同步流程。"

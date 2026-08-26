@@ -1,0 +1,32 @@
+.eastmoney_bid
+.eastmoney_cookie
+.eastmoney_profile/
+__pycache__/
+*.csv
+*.md
+
+# Local credentials and browser state can contain cookies or login data.
+**/.eastmoney_bid
+**/.eastmoney_cookie
+**/.eastmoney_profile/
+
+# Python and tool runtime artifacts.
+**/__pycache__/
+*.py[cod]
+
+# Runtime logs and proxy captures.
+logs/*.log
+logs/*.jsonl
+logs/*.mitm
+logs/*.pid
+logs/proxy_settings_backup.json
+数据同步/logs/
+
+# Generated market-data and screening outputs.
+screening_results/
+数据同步/screening_results/
+数据同步/watchlists/
+
+# Downloaded pages and conversation snapshots are not project source.
+watchlists/eastmoney_index.min.js
+数据同步/strategies/shared_chat_snapshot.html

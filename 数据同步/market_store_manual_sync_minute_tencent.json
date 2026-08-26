@@ -1,0 +1,102 @@
+﻿{
+    "store_root":  "D:\\a_stock_data",
+    "stocks_file":  "watchlists/stock_universe.csv",
+    "stocks":  [
+
+               ],
+    "stock_pool":  {
+                       "enabled":  false,
+                       "refresh_on_sync":  false,
+                       "include_config_stocks":  false,
+                       "output_path":  "watchlists/stock_universe.csv",
+                       "max_price":  1000,
+                       "min_market_cap":  12000000000,
+                       "exclude_prefixes":  [
+                                                "688"
+                                            ],
+                       "exclude_st":  true
+                   },
+    "periods":  {
+                    "monthly":  {
+                                    "source_type":  "fq",
+                                    "remote_period":  "month",
+                                    "adjustment":  "qfq",
+                                    "lookback_years":  5,
+                                    "chunk_days":  12000,
+                                    "incremental_buffer_days":  180,
+                                    "max_records":  640
+                                },
+                    "weekly":  {
+                                   "source_type":  "fq",
+                                   "remote_period":  "week",
+                                   "adjustment":  "qfq",
+                                   "lookback_years":  5,
+                                   "chunk_days":  3000,
+                                   "incremental_buffer_days":  60,
+                                   "max_records":  640
+                               },
+                    "daily":  {
+                                  "source_type":  "fq",
+                                  "remote_period":  "day",
+                                  "adjustment":  "qfq",
+                                  "lookback_years":  5,
+                                  "chunk_days":  720,
+                                  "incremental_buffer_days":  30,
+                                  "max_records":  640
+                              },
+                    "60m":  {
+                                "source_type":  "minute",
+                                "remote_period":  "60",
+                                "adjustment":  "qfq",
+                                "adjustflag":  "2",
+                                "fallback_sources":  [
+
+                                                     ],
+                                "fetch_count":  1200,
+                                "lookback_years":  5,
+                                "chunk_days":  90,
+                                "incremental_buffer_days":  7
+                            },
+                    "30m":  {
+                                "source_type":  "minute",
+                                "remote_period":  "30",
+                                "adjustment":  "qfq",
+                                "adjustflag":  "2",
+                                "fallback_sources":  [
+
+                                                     ],
+                                "fetch_count":  1200,
+                                "lookback_years":  5,
+                                "chunk_days":  60,
+                                "incremental_buffer_days":  7
+                            },
+                    "15m":  {
+                                "source_type":  "minute",
+                                "remote_period":  "15",
+                                "adjustment":  "qfq",
+                                "adjustflag":  "2",
+                                "fallback_sources":  [
+
+                                                     ],
+                                "fetch_count":  1200,
+                                "lookback_years":  5,
+                                "chunk_days":  45,
+                                "incremental_buffer_days":  7
+                            },
+                    "5m":  {
+                               "source_type":  "minute_baostock",
+                               "remote_period":  "5",
+                               "adjustment":  "qfq",
+                               "adjustflag":  "2",
+                               "fallback_sources":  [
+                                                        "minute"
+                                                    ],
+                               "fetch_count":  1200,
+                               "history_start":  "2026-01-01",
+                               "intraday_keep_start":  "09:35",
+                               "intraday_keep_end":  "10:30",
+                               "chunk_days":  30,
+                               "incremental_buffer_days":  7
+                           }
+                }
+}
